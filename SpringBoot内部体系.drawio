@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-25T02:19:54.597Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36" etag="z6vvSIU83FSYkwH7x8Jb" version="17.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-25T02:23:35.385Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36" etag="2JCgzhYN5un9fFA3JIVi" version="17.1.0" type="github">
   <diagram id="WSF6ir5eKw6CJWOBiZyK" name="Page-1">
     <mxGraphModel dx="1538" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -166,7 +166,7 @@
         <mxCell id="QafbukXLdL49FyJvWK3I-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#D5E8D4;" edge="1" parent="1" source="QafbukXLdL49FyJvWK3I-1" target="QafbukXLdL49FyJvWK3I-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QafbukXLdL49FyJvWK3I-1" value="invokeBeanFactoryPostProcessors" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="QafbukXLdL49FyJvWK3I-1" value="invokeBeanFactoryPostProcessors" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFB5B5;" vertex="1" parent="1">
           <mxGeometry x="390" y="1370" width="230" height="40" as="geometry" />
         </mxCell>
         <mxCell id="QafbukXLdL49FyJvWK3I-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#D5E8D4;" edge="1" parent="1" source="QafbukXLdL49FyJvWK3I-3" target="QafbukXLdL49FyJvWK3I-5">
@@ -223,13 +223,13 @@
         <mxCell id="QafbukXLdL49FyJvWK3I-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#D5E8D4;" edge="1" parent="1" source="QafbukXLdL49FyJvWK3I-23" target="QafbukXLdL49FyJvWK3I-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QafbukXLdL49FyJvWK3I-23" value="initApplicationEventMulticaster（初始化事件多播器）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="QafbukXLdL49FyJvWK3I-23" value="initApplicationEventMulticaster（初始化事件多播器）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE2CF;" vertex="1" parent="1">
           <mxGeometry x="390" y="1590" width="230" height="40" as="geometry" />
         </mxCell>
         <mxCell id="QafbukXLdL49FyJvWK3I-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#D5E8D4;" edge="1" parent="1" source="QafbukXLdL49FyJvWK3I-25" target="QafbukXLdL49FyJvWK3I-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="QafbukXLdL49FyJvWK3I-25" value="onRefrsh（触发初始化环节，这里会有对各个bean的beanPostProcess前置处理和后置处理）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="QafbukXLdL49FyJvWK3I-25" value="onRefrsh（这里面会触发到一个叫做webServerFactory创建webServer的动作）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFC8BF;" vertex="1" parent="1">
           <mxGeometry x="370" y="1660" width="270" height="50" as="geometry" />
         </mxCell>
         <mxCell id="QafbukXLdL49FyJvWK3I-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#D5E8D4;" edge="1" parent="1" source="QafbukXLdL49FyJvWK3I-27" target="QafbukXLdL49FyJvWK3I-29">
