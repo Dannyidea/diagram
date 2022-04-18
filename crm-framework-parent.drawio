@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-18T09:32:13.809Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="2U7SOLFVBFLdiJJsDZpE" version="17.4.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-18T10:53:46.188Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36" etag="sFFn2WwKLA56bCUBPHwR" version="17.4.5" type="github">
   <diagram id="nAI1KLYSaczWMPc24v9q" name="Page-1">
-    <mxGraphModel dx="3408" dy="812" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3305" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -263,39 +263,83 @@
             <mxPoint x="3230" y="650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XTI7c0Vjb2D2F38PPejS-182" value="统计图数据上报任务" style="swimlane;startSize=20;fillColor=#D4E1F5;" vertex="1" parent="1">
-          <mxGeometry x="1440" y="1370" width="290" height="900" as="geometry" />
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-182" value="统计图数据上报任务（15秒/次）" style="swimlane;startSize=20;fillColor=#D4E1F5;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="1820" width="560" height="450" as="geometry" />
         </mxCell>
         <mxCell id="XTI7c0Vjb2D2F38PPejS-183" value="DynamicThreadPoolChartDataJob" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-182">
           <mxGeometry x="40" y="40" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XTI7c0Vjb2D2F38PPejS-184" value="清理标签队列老数据" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-182">
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-184" value="每隔15秒上报一次线程池的数据" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-182">
           <mxGeometry x="50" y="124" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XTI7c0Vjb2D2F38PPejS-185" value="释放分布式锁" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-182">
-          <mxGeometry x="50" y="220" width="180" height="30" as="geometry" />
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-192" value="上报线程池队列峰值" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-182">
+          <mxGeometry x="305" y="126" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-193" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="XTI7c0Vjb2D2F38PPejS-182" source="XTI7c0Vjb2D2F38PPejS-184" target="XTI7c0Vjb2D2F38PPejS-192">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XTI7c0Vjb2D2F38PPejS-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XTI7c0Vjb2D2F38PPejS-183">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1580" y="1490" as="targetPoint" />
+            <mxPoint x="1600" y="1940" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XTI7c0Vjb2D2F38PPejS-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XTI7c0Vjb2D2F38PPejS-184">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1580" y="1590" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-188" value="线程池信息上报任务（1秒/次）" style="swimlane;startSize=20;fillColor=#D4E1F5;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="1820" width="635" height="450" as="geometry" />
         </mxCell>
-        <mxCell id="XTI7c0Vjb2D2F38PPejS-188" value="线程池信息上报任务" style="swimlane;startSize=20;fillColor=#D4E1F5;" vertex="1" parent="1">
-          <mxGeometry x="1730" y="1370" width="290" height="900" as="geometry" />
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-200" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="XTI7c0Vjb2D2F38PPejS-188" source="XTI7c0Vjb2D2F38PPejS-189" target="XTI7c0Vjb2D2F38PPejS-191">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XTI7c0Vjb2D2F38PPejS-189" value="DynamicThreadPoolBaseInfoJob" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-188">
           <mxGeometry x="45" y="40" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="XTI7c0Vjb2D2F38PPejS-190" value="清理标签队列老数据" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-188">
-          <mxGeometry x="50" y="124" width="180" height="30" as="geometry" />
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-201" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="XTI7c0Vjb2D2F38PPejS-188" source="XTI7c0Vjb2D2F38PPejS-191">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140.0000000000009" y="180.00000000000045" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="XTI7c0Vjb2D2F38PPejS-191" value="释放分布式锁" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-188">
-          <mxGeometry x="50" y="220" width="180" height="30" as="geometry" />
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-191" value="上报线程池实时数据" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-188">
+          <mxGeometry x="50" y="110" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="XTI7c0Vjb2D2F38PPejS-188" source="XTI7c0Vjb2D2F38PPejS-202" target="XTI7c0Vjb2D2F38PPejS-191">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="220" />
+              <mxPoint x="30" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-207" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XTI7c0Vjb2D2F38PPejS-206">
+          <mxGeometry x="-0.067" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-202" value="&lt;span&gt;计算当前线程池负载值是否达到告警阈值&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-188">
+          <mxGeometry x="66" y="180" width="148" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-204" value="异步发送告警邮件" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="XTI7c0Vjb2D2F38PPejS-188">
+          <mxGeometry x="330" y="205" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-195" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XTI7c0Vjb2D2F38PPejS-192" target="XTI7c0Vjb2D2F38PPejS-194">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-197" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XTI7c0Vjb2D2F38PPejS-194" target="XTI7c0Vjb2D2F38PPejS-196">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-194" value="上报活跃线程数峰值" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="2054" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-196" value="上报线程池执行任务的耗时情况" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6D0DE;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="2164" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-203" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XTI7c0Vjb2D2F38PPejS-202">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2350.000000000001" y="2040.0000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XTI7c0Vjb2D2F38PPejS-205" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="XTI7c0Vjb2D2F38PPejS-203">
+          <mxGeometry x="0.0232" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
